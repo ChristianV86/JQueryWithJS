@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="import" href="/imagenes/IArt.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">    
     <title>Manejo de JQuery</title>    
     <!-- En esta linea añadimos la libreria de JQuery desde un servidor de Google -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -19,8 +21,47 @@
     <!-- Importante: la liena de codigo para añadir JQuery, debe ir después de la linea que añade el archivo CSS -->
     
     <div class="container">
-        <h1>Este es un curso de JavaScript de Pildoras Informáticas</h1>
-        <img src="./imagenes/IArt.png" alt="IArt">
+        <h1>Manejo de la librería JQuery con JavaScript</h1>
+        <h2>Entendiendo en DOM</h2>
+        <img src="./imagenes/Entendiendo el DOM.png" alt="IArt">
+
+        <h2>¿Qué es el DOM</h2>
+        <p>
+            Sus siglas en inglés significan Document Object Model, que traducido da como resultado Modelo de  Objetos del documento.
+        </p>
+        <p>
+            Cuando cargamos una página en el navegador, este no se limita solo a interpretar todas las lineas de código y sus etiquetas; ademas, crea y memoriza un modelo de esa página html. En otras palabras el navegador recuerda las etiquetas html, sus atributos y el orden en el cual aparecen en el archivo.
+        </p>
+        <p>
+            En la imagen de arriba se muestra la gerarquía en la cual el navegador interpreta el documento html
+        </p>
+        <h2>Estandar HTML5 del W3c</h2>
+        <img src="./imagenes/trilogia del desarrollo web.png" alt="Estandar HTML5">
+        <p>
+            Para comprender el DOM es necesario tener conocimientos de las tres tecnologías de la imagen, a las cuales se les ha llamado comunmente "La trilogía del diseño Web"
+        </p> 
+        <h2>Seleccionando elementos con JQuery</h2>
+        <p>
+            En ocasiones nos veremos en la necesidad de seleccionar elementos que se encuentran dentro de nuestra página web, ya sea para agregar interactividad; para esto necesitamos conocer el DOM
+        </p>      
+        <img src="./imagenes/Seleccion Elementos JQuery.png" alt="Seleccion Elementos">
+        <h3>Ejemplo práctico</h3>
+        <img src="./imagenes/Ejemplo práctico.png" alt="Ejemplo1 Selector">
+        <p id="mensaje">Este es el mensaje de ejemplo</p> 
+        <!-- Estas son las alternativas para seleccionar el elemento con JS-->
+        <script>
+            var mensajeEjemplo = document.getElementById(mensajeEjemplo).value;
+            // Objeto JQuery
+            var mensajeEjemplo = $("#mensaje").value;
+        </script> 
+        <p>
+            <strong>IMPORTANTE: </strong>Los selectores que estamos viendo son los mismo selectores que se utilizan con <strong>CSS.</strong>
+        </p>      
     </div>
+    <footer>
+        <p>
+            Esta información fue sacada el curso de JavaScript del canal <a href="https://www.youtube.com/@pildorasinformaticas">Píldoras Informáticas</a> de YouTube
+        </p>        
+    </footer>
 </body>
 </html>
